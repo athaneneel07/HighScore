@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HighScore Turf | Kothrud</title>
+    <title>HighScore Turf | Kothrud's Premier Sports Arena</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         html { scroll-behavior: smooth; }
         .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
                         url('http://googleusercontent.com/image_collection/image_retrieval/17442131665601671848_0');
             background-size: cover;
             background-position: center;
@@ -19,49 +19,83 @@
 <body class="bg-gray-50 font-sans text-gray-900">
 
     <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-md sticky top-0 z-50">
-        <h1 class="text-2xl font-black text-green-600 tracking-tighter uppercase">HighScore</h1>
-        <div class="flex items-center gap-3">
-            <a href="tel:9422231321" class="bg-black text-white px-4 py-2 rounded-full text-xs font-bold flex items-center gap-2">
-                <i class="fas fa-phone-alt"></i> CALL
-            </a>
-            <a href="#booking" class="bg-green-600 text-white px-4 py-2 rounded-full text-xs font-bold">BOOK</a>
+        <h1 class="text-2xl font-black text-green-600 tracking-tighter">HIGHSCORE</h1>
+        <div class="space-x-6 hidden md:flex text-xs font-bold uppercase tracking-widest">
+            <a href="#gallery" class="hover:text-green-600 transition">Gallery</a>
+            <a href="#pricing" class="hover:text-green-600 transition">Pricing</a>
+            <a href="#booking" class="hover:text-green-600 transition">Book Slot</a>
+            <a href="tel:9422231321" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition"><i class="fas fa-phone-alt"></i> Call</a>
         </div>
     </nav>
 
-    <header class="hero-bg h-[70vh] flex flex-col items-center justify-center text-center text-white px-4">
-        <h2 class="text-5xl md:text-7xl font-black mb-4 italic uppercase tracking-tight">Own The Field</h2>
-        <p class="text-lg md:text-xl mb-8 max-w-xl text-gray-300">Premium Football & Box Cricket in Kishkinda Nagar, Kothrud.</p>
-        <div class="flex flex-col sm:flex-row gap-4 w-full max-w-md">
-            <a href="#booking" class="bg-green-600 text-white text-lg font-bold py-4 px-8 rounded-xl shadow-xl">START BOOKING</a>
-            <a href="tel:9422231321" class="bg-white text-black text-lg font-bold py-4 px-8 rounded-xl shadow-xl flex items-center justify-center gap-3">
-                <i class="fas fa-phone-alt"></i> QUICK CALL
+    <header class="hero-bg h-[80vh] flex flex-col items-center justify-center text-center text-white px-4">
+        <h2 class="text-5xl md:text-8xl font-black mb-4 italic tracking-tight">KOTHRUD'S BEST</h2>
+        <p class="text-xl md:text-2xl mb-8 max-w-2xl text-gray-300 font-light italic">Premium Box Cricket & Football Turf in Kishkinda Nagar.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#booking" class="bg-green-500 hover:bg-green-600 text-white text-lg font-bold py-4 px-12 rounded-xl transition-all hover:scale-105 shadow-2xl">
+                BOOK YOUR HOUR
+            </a>
+            <a href="tel:9422231321" class="bg-white text-black text-lg font-bold py-4 px-12 rounded-xl transition-all hover:scale-105 shadow-2xl flex items-center gap-3">
+                <i class="fas fa-phone-alt"></i> CALL NOW
             </a>
         </div>
     </header>
 
-    <section id="gallery" class="py-16 bg-white px-6">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-            <img src="http://googleusercontent.com/image_collection/image_retrieval/17442131665601671848_1" class="rounded-xl h-64 w-full object-cover shadow-md" alt="Turf 1">
-            <img src="http://googleusercontent.com/image_collection/image_retrieval/17442131665601671848_2" class="rounded-xl h-64 w-full object-cover shadow-md" alt="Turf 2">
-            <img src="http://googleusercontent.com/image_collection/image_retrieval/17442131665601671848_3" class="rounded-xl h-64 w-full object-cover shadow-md" alt="Turf 3">
+    <section id="gallery" class="py-24 bg-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-black mb-12 text-center uppercase">Our <span class="text-green-600">Arena</span></h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <img src="http://googleusercontent.com/image_collection/image_retrieval/17442131665601671848_1" class="rounded-2xl h-64 w-full object-cover shadow-lg" alt="Turf 1">
+                <img src="http://googleusercontent.com/image_collection/image_retrieval/17442131665601671848_2" class="rounded-2xl h-64 w-full object-cover shadow-lg" alt="Turf 2">
+                <img src="http://googleusercontent.com/image_collection/image_retrieval/17442131665601671848_3" class="rounded-2xl h-64 w-full object-cover shadow-lg" alt="Turf 3">
+            </div>
         </div>
     </section>
 
-    <section id="booking" class="py-20 px-6 bg-gray-50">
-        <div class="max-w-4xl mx-auto bg-white rounded-[2rem] shadow-2xl overflow-hidden border">
-            <div class="bg-green-600 p-8 text-white text-center">
-                <h3 class="text-3xl font-black uppercase">Book Your Slot</h3>
-                <p class="opacity-90">Open Daily: 6:00 AM - 11:59 PM</p>
+    <section id="pricing" class="py-24 bg-gray-50 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h3 class="text-3xl font-black mb-12 uppercase">Rates & <span class="text-green-600">Slots</span></h3>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="border-2 border-white p-8 rounded-3xl hover:border-green-500 transition shadow-sm bg-white">
+                    <h4 class="text-xl font-bold mb-2 uppercase">Daylight Special</h4>
+                    <p class="text-gray-500 mb-6 font-semibold">6:00 AM - 5:00 PM</p>
+                    <div class="text-4xl font-extrabold text-green-600 mb-6">₹800 <span class="text-sm text-gray-400">/hr</span></div>
+                    <ul class="text-left space-y-3 text-gray-600 mb-4">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Free Bibs & Cones</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Drinking Water Included</li>
+                    </ul>
+                </div>
+                <div class="border-2 border-green-500 p-8 rounded-3xl relative shadow-xl bg-white">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-green-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-tighter">Most Popular</div>
+                    <h4 class="text-xl font-bold mb-2 uppercase">Prime Time</h4>
+                    <p class="text-gray-500 mb-6 font-semibold">5:00 PM - 12:00 AM</p>
+                    <div class="text-4xl font-extrabold text-green-600 mb-6">₹1,200 <span class="text-sm text-gray-400">/hr</span></div>
+                    <ul class="text-left space-y-3 text-gray-600 mb-4">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Full Floodlight Access</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Bluetooth Speaker Access</li>
+                    </ul>
+                </div>
             </div>
-            
-            <form class="p-8 md:p-12 grid md:grid-cols-2 gap-8">
+        </div>
+    </section>
+
+    <section id="booking" class="py-24 px-6 max-w-5xl mx-auto">
+        <div class="bg-white shadow-2xl rounded-[2rem] overflow-hidden border">
+            <div class="bg-green-600 p-8 text-white text-center">
+                <h3 class="text-3xl font-bold">Reserve Your Slot</h3>
+                <p class="opacity-80 font-medium">Open 6:00 AM to 11:59 PM Daily</p>
+            </div>
+            <form class="p-10 grid md:grid-cols-2 gap-8">
                 <div>
-                    <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Select Date</label>
+                    <label class="block text-xs font-bold uppercase text-gray-400 mb-2 tracking-widest">Full Name</label>
+                    <input type="text" class="w-full border-b-2 border-gray-100 p-3 focus:border-green-500 outline-none transition" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-400 mb-2 tracking-widest">Date</label>
                     <input type="date" class="w-full border-b-2 border-gray-100 p-3 focus:border-green-500 outline-none transition">
                 </div>
-
                 <div>
-                    <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Select Time</label>
+                    <label class="block text-xs font-bold uppercase text-gray-400 mb-2 tracking-widest">Select Hour</label>
                     <select class="w-full border-b-2 border-gray-100 p-3 focus:border-green-500 outline-none transition">
                         <option>06:00 AM - 07:00 AM</option>
                         <option>07:00 AM - 08:00 AM</option>
@@ -83,51 +117,42 @@
                         <option>11:00 PM - 11:59 PM</option>
                     </select>
                 </div>
-
-                <div class="md:col-span-2">
-                    <label class="block text-xs font-bold uppercase text-gray-400 mb-2">Select Sport</label>
-                    <div class="flex gap-6 pt-2">
-                        <label class="flex items-center gap-2 cursor-pointer font-bold">
-                            <input type="radio" name="sport" class="w-5 h-5 accent-green-600" checked> Football
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-400 mb-2 tracking-widest">Preferred Sport</label>
+                    <div class="flex space-x-4 pt-2">
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="radio" name="sport" class="accent-green-600"> <span>Football</span>
                         </label>
-                        <label class="flex items-center gap-2 cursor-pointer font-bold">
-                            <input type="radio" name="sport" class="w-5 h-5 accent-green-600"> Box Cricket
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="radio" name="sport" class="accent-green-600"> <span>Cricket</span>
                         </label>
                     </div>
                 </div>
-
-                <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-                    <a href="https://wa.me/919422231321?text=Hi! I want to book a slot for my match." class="bg-green-600 text-white font-bold py-5 rounded-xl text-center shadow-lg hover:bg-green-700 transition flex items-center justify-center gap-3">
-                        <i class="fab fa-whatsapp text-2xl"></i> WHATSAPP BOOKING
-                    </a>
-                    <a href="tel:9422231321" class="bg-black text-white font-bold py-5 rounded-xl text-center shadow-lg hover:bg-gray-800 transition flex items-center justify-center gap-3">
-                        <i class="fas fa-phone-alt"></i> CALL TO CONFIRM
-                    </a>
-                </div>
+                <button type="button" onclick="window.location.href='https://wa.me/919422231321?text=Hello! I want to book a slot for my match.'" class="md:col-span-2 bg-green-600 text-white font-bold py-5 rounded-xl hover:bg-black transition-all shadow-lg text-lg uppercase tracking-wider">
+                    Check Availability on WhatsApp
+                </button>
             </form>
         </div>
     </section>
 
-    <section id="contact" class="py-16 bg-white px-6">
+    <section id="contact" class="py-24 bg-white px-6 border-t">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
             <div>
-                <h3 class="text-3xl font-black mb-6 uppercase">Find Us</h3>
-                <p class="text-gray-600 mb-4 font-bold">Kishkinda Nagar, Kothrud, Pune - 411038</p>
-                <p class="text-green-600 font-black text-2xl">+91 94222 31321</p>
+                <h3 class="text-3xl font-black mb-6 uppercase tracking-tighter">Find <span class="text-green-600">Us</span></h3>
+                <div class="space-y-6">
+                    <p class="text-gray-600">Kishkinda Nagar, Kothrud, Pune - 411038</p>
+                    <p class="text-2xl font-bold text-gray-900">+91 94222 31321</p>
+                </div>
             </div>
             <div class="h-64 rounded-3xl overflow-hidden shadow-xl border">
-                <iframe src="http://googleusercontent.com/maps.google.com/7" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="http://googleusercontent.com/maps.google.com/8" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
-    <div class="fixed bottom-6 left-6 right-6 flex justify-between items-center z-50 md:hidden">
-        <a href="tel:9422231321" class="bg-black text-white w-14 h-14 rounded-full flex items-center justify-center text-xl shadow-2xl border-2 border-white">
-            <i class="fas fa-phone-alt"></i>
-        </a>
-        <a href="https://wa.me/919422231321" class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl border-2 border-white">
-            <i class="fab fa-whatsapp"></i>
-        </a>
+    <div class="fixed bottom-6 left-6 right-6 flex justify-between z-50 md:hidden">
+        <a href="tel:9422231321" class="bg-black text-white w-14 h-14 rounded-full flex items-center justify-center text-xl shadow-2xl"><i class="fas fa-phone-alt"></i></a>
+        <a href="https://wa.me/919422231321" class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl"><i class="fab fa-whatsapp"></i></a>
     </div>
 
 </body>
