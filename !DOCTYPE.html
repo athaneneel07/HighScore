@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighScore Turf | Kothrud's Premier Sports Arena</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+                        url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=1470');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+
+    <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-md sticky top-0 z-50">
+        <h1 class="text-2xl font-black text-green-600 tracking-tighter uppercase">HighScore</h1>
+        <div class="space-x-6 hidden md:flex items-center text-xs font-bold uppercase tracking-widest">
+            <a href="#legacy" class="hover:text-green-600 transition">Legacy</a>
+            <a href="#advantages" class="hover:text-green-600 transition">Advantages</a>
+            <a href="#pricing" class="hover:text-green-600 transition">Pricing</a>
+            <a href="#contact" class="hover:text-green-600 transition">Find Us</a>
+            <a href="https://www.instagram.com/highscore_fc" target="_blank" class="text-pink-600 text-lg hover:scale-110 transition mx-2">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="tel:9422231321" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
+                <i class="fas fa-phone-alt mr-2"></i> Call Now
+            </a>
+            <a href="#booking" class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 shadow-lg transition">Book Slot</a>
+        </div>
+    </nav>
+
+    <header class="hero-bg h-[80vh] flex flex-col items-center justify-center text-center text-white px-4">
+        <h2 class="text-5xl md:text-8xl font-black mb-4 italic tracking-tight uppercase text-white">Kothrud's Best</h2>
+        <p class="text-xl md:text-2xl mb-8 max-w-2xl text-gray-300 font-light italic">Premium Box Cricket & Football Turf in Rambaug Colony.</p>
+        <a href="#booking" class="bg-green-500 hover:bg-green-600 text-white text-lg font-bold py-4 px-12 rounded-xl transition-all hover:scale-105 shadow-2xl">
+            BOOK YOUR HOUR
+        </a>
+    </header>
+
+    <section id="legacy" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h3 class="text-4xl font-black text-gray-800 mb-6 uppercase tracking-tighter">Our <span class="text-green-600">Legacy</span></h3>
+                <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                    Established in Kothrud, **HighScore Turf** has been providing a professional-grade arena for over 5 years. We've hosted over 5,000 matches, becoming the go-to spot for night-time football and weekend box cricket.
+                </p>
+                <div class="inline-block bg-gray-100 px-6 py-3 rounded-lg border-l-4 border-green-600">
+                    <span class="block text-2xl font-bold text-gray-800">5+ Years</span>
+                    <span class="text-gray-500 text-sm uppercase font-bold text-gray-500">Of Sporting Excellence</span>
+                </div>
+            </div>
+            <div class="rounded-3xl overflow-hidden shadow-2xl transform rotate-2">
+                <img src="https://images.unsplash.com/photo-1529900667825-30062b1b51f1?auto=format&fit=crop&q=80&w=800" alt="Turf Action">
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-24 px-6 max-w-5xl mx-auto">
+        <div class="bg-white shadow-2xl rounded-[2rem] overflow-hidden border">
+            <div class="bg-green-600 p-8 text-white text-center">
+                <h3 class="text-3xl font-bold uppercase">Reserve Your Slot</h3>
+                <p class="opacity-80 font-medium text-white">Open 6:00 AM to 11:59 PM Daily</p>
+            </div>
+            <form class="p-10 grid md:grid-cols-2 gap-8">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-400 mb-2 tracking-widest">Full Name</label>
+                    <input type="text" id="userName" class="w-full border-b-2 border-gray-100 p-3 focus:border-green-500 outline-none transition" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-400 mb-2 tracking-widest">Date</label>
+                    <input type="date" id="bookDate" class="w-full border-b-2 border-gray-100 p-3 focus:border-green-500 outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-400 mb-2 tracking-widest">Select Hour</label>
+                    <select id="bookTime" class="w-full border-b-2 border-gray-100 p-3 focus:border-green-500 outline-none transition">
+                        <option>06:00 AM - 07:00 AM</option>
+                        <option>07:00 AM - 08:00 AM</option>
+                        <option>08:00 AM - 09:00 AM</option>
+                        <option>09:00 AM - 10:00 AM</option>
+                        <option>10:00 AM - 11:00 AM</option>
+                        <option>11:00 AM - 12:00 PM</option>
+                        <option>12:00 PM - 01:00 PM</option>
+                        <option>01:00 PM - 02:00 PM</option>
+                        <option>02:00 PM - 03:00 PM</option>
+                        <option>03:00 PM - 04:00 PM</option>
+                        <option>04:00 PM - 05:00 PM</option>
+                        <option>05:00 PM - 06:00 PM</option>
+                        <option>06:00 PM - 07:00 PM</option>
+                        <option>07:00 PM - 08:00 PM</option>
+                        <option>08:00 PM - 09:00 PM</option>
+                        <option>09:00 PM - 10:00 PM</option>
+                        <option>10:00 PM - 11:00 PM</option>
+                        <option>11:00 PM - 11:59 PM</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-400 mb-2 tracking-widest">Preferred Sport</label>
+                    <div class="flex space-x-4 pt-2">
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="radio" name="sport" value="Football" checked class="accent-green-600"> <span>Football</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="radio" name="sport" value="Cricket" class="accent-green-600"> <span>Cricket</span>
+                        </label>
+                    </div>
+                </div>
+                <button type="button" onclick="sendWhatsApp()" class="md:col-span-2 bg-green-600 text-white font-bold py-5 rounded-xl hover:bg-black transition-all shadow-lg text-lg uppercase tracking-wider">
+                    Check Availability on WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-gray-50 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-3xl font-black mb-6 uppercase">Find <span class="text-green-600">Us</span></h3>
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-green-100 p-4 rounded-xl text-green-600"><i class="fas fa-map-marker-alt text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 uppercase text-xs tracking-widest mb-1">Address</h4>
+                                <p class="text-gray-600 leading-relaxed">
+                                    High Score FC Turf, near shivsamarth hall,<br>
+                                    opposite sharao lawns, Rambaug Colony,<br>
+                                    Kothrud, Pune, Maharashtra 411038
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-green-100 p-4 rounded-xl text-green-600"><i class="fas fa-phone-alt text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 uppercase text-xs tracking-widest mb-1">Inquiries</h4>
+                                <p class="text-gray-600 font-bold text-lg">+91 94222 31321</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[400px] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white bg-gray-200">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.5623668351536!2d73.818318!3d18.503487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb02f811553%3A0xc3c94d075d9e5a7!2sHigh%20Score%20FC%20Turf!5e0!3m2!1sen!2sin!4v1709400000000!5m2!1sen!2sin" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white text-center">
+        <h4 class="text-sm font-bold uppercase tracking-[0.2em] text-gray-400 mb-4 text-gray-400">Follow the Action</h4>
+        <a href="https://www.instagram.com/highscore_fc" target="_blank" class="inline-flex items-center space-x-3 text-2xl font-black text-gray-800 hover:text-pink-600 transition">
+            <i class="fab fa-instagram text-3xl"></i>
+            <span>@highscore_fc</span>
+        </a>
+    </section>
+
+    <footer class="bg-gray-900 py-12 text-center border-t border-gray-800">
+        <p class="text-green-500 font-black text-xl mb-4 tracking-tighter uppercase">HighScore Turf</p>
+        <div class="text-gray-500 text-xs space-y-2 mb-6">
+            <p>High Score FC Turf, near shivsamarth hall, opposite sharao lawns,</p>
+            <p>Rambaug Colony, Kothrud, Pune - 411038</p>
+        </div>
+        <p class="text-gray-600 text-[10px] uppercase tracking-widest text-gray-600">© 2026 Sporting Excellence</p>
+    </footer>
+
+    <a href="tel:9422231321" class="fixed bottom-8 left-8 bg-black text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition-transform z-50">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+    <a href="javascript:void(0)" onclick="sendWhatsApp()" class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        function sendWhatsApp() {
+            const name = document.getElementById('userName').value || "Player";
+            const date = document.getElementById('bookDate').value || "Unspecified Date";
+            const time = document.getElementById('bookTime').value;
+            const sport = document.querySelector('input[name="sport"]:checked').value;
+
+            const phoneNumber = "919422231321";
+            const message = `Hello! I am ${name}. I would like to book a slot for ${sport} on ${date} during the ${time} slot. Is it available?`;
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+    </script>
+
+</body>
+</html>
